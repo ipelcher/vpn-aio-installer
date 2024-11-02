@@ -10,6 +10,7 @@ SQL_INSERT_TEMPLATE="
 INSERT INTO settings VALUES (%d, 'webCertFile', '/root/cert/3x-ui-public.key');
 INSERT INTO settings VALUES (%d, 'webKeyFile', '/root/cert/3x-ui-private.key');
 "
+PUBIP4=$(curl -4 ifconfig.me)
 
 # Installing Docker
 install_docker() {
@@ -133,7 +134,7 @@ sudo docker restart 3x-ui
 
 echo "\n===================================="
 echo "Installation is successful!"
-echo "Access the panel at port 2053. Your browser might show a warning about insecure connection because the certificate is self-signed. You can safely ignore it."
+echo "Access the panel at https://$PUBIP4:2053/panel. Your browser might show a warning about insecure connection because the certificate is self-signed. You can safely ignore it."
 echo "IMPORTANT: Please change panel port, web base path and admin credentials in web ui!"
 echo "Default user credentials:"
 echo "USERNAME: admin"
