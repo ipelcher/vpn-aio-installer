@@ -132,7 +132,7 @@ execute_sql_inserts
 echo "Restarting the panel for the SSL settings to apply..."
 sudo docker restart 3x-ui
 
-echo "\n===================================="
+echo "===================================="
 echo "Installation is successful!"
 echo "Access the panel at https://$PUBIP4:2053/panel. Your browser might show a warning about insecure connection because the certificate is self-signed. You can safely ignore it."
 echo "IMPORTANT: Please change panel port, web base path and admin credentials in web ui!"
@@ -140,4 +140,4 @@ echo "Default user credentials:"
 echo "USERNAME: admin"
 echo "PASSWORD: admin"
 echo "Enjoy the free internet!"
-echo "====================================\n"
+echo "===================================="
