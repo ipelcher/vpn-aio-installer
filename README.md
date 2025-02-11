@@ -1,4 +1,4 @@
-# Script for installing 3x-ui XRAY VPN Panel and it's requrements | vpn-aio-installer
+# Script for installing 3x-ui XRAY VPN Panel and its requrements | vpn-aio-installer
 
 Installation: 
 1. Install prerequisites for downloading the script: 
